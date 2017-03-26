@@ -1,0 +1,404 @@
+body, h1, header, h2, ul, li, a {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*@@media only screen and (min-width: 700px) {
+
+}*/
+
+body {
+    max-width: 100%;
+    min-width: 500px;
+}
+
+
+/*-------Top-------------------------------------------------------------*/
+
+
+/*-------Section-------------------------------------------------------------*/
+
+
+/*-------Starts-------------------------------------------------------------*/
+
+
+/*--------Here------------------------------------------------------------*/
+
+nav {
+    background: white;
+    line-height: 2em;
+    position: relative;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    margin: 0 2em;
+}
+
+nav ul {
+    /*float: left;*/
+    padding: 1em;
+    margin-right: 3em;
+    /*margin: 0 auto;*/
+    /*left: 10px;*/
+    font-size: 1.2em;
+    position: relative;
+    border-top: 3px solid white;
+}
+
+
+/************************************/
+
+.home {
+    color: orangered;
+    border-top-color: orangered;
+}
+
+.portfolio div {
+    position: absolute;
+    width: 180px;
+    left: 1000em;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+    color: orangered;
+    border: 1px solid white;
+}
+
+.portfolio div li {
+    line-height: 2em;
+    padding: 0.5em 1em;
+    margin: 0.2em auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.portfolio div li:last-child {
+    border-bottom: none;
+}
+
+.portfolio:hover div {
+    display: block;
+    top: 70px;
+    left: -15px;
+}
+
+.portfolio:hover div:hover li a:hover {
+    color: orangered;
+}
+
+.portfolio:hover div li ul.firstlevel {
+    position: absolute;
+    display: none;
+}
+
+.portfolio:hover div:hover li:nth-child(4):hover ul.firstlevel {
+    background-color: white;
+    display: block;
+    width: 175px;
+    top: 160px;
+    left: 180px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+}
+
+.firstlevel li {
+    margin: 0 1em;
+    padding: 0 0.5em;
+    border: 1px solid white;
+}
+
+
+/********************************************************/
+
+.pages div {
+    position: absolute;
+    width: 180px;
+    left: 1000em;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: white;
+    color: orangered;
+    border: 1px solid white;
+}
+
+.pages div li {
+    line-height: 2em;
+    padding: 0.5em 1em;
+    margin: 0.2em auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.pages div li:last-child {
+    border-bottom: none;
+}
+
+.pages:hover {
+    color: orangered;
+    border-top-color: orangered;
+}
+
+.pages:hover div {
+    display: block;
+    top: 70px;
+    left: -15px;
+}
+
+.pages:hover div:hover li a:hover {
+    color: orangered;
+}
+
+.blog:hover, .portfolio:hover, .testimonials:hover, .search:hover {
+    color: orangered;
+    border-top-color: orangered;
+}
+
+.search input {
+    position: absolute;
+    left: 7em;
+    top: 1.5em;
+    height: 30%;
+    width: 190%;
+    border-radius: 5px;
+    font-size: 0.7em;
+}
+
+.show-this {
+    display: none;
+}
+
+
+/************************************************************/
+
+
+/************************************************************/
+
+
+/************************************************************/
+
+
+/************************************************************/
+
+
+/************************************************************/
+
+
+/************************************************************/
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg);
+    text-align: center;
+    padding: 1em;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 1em 0;
+    color: white;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 100;
+}
+
+.cf::before {
+    content: "";
+    display: table;
+}
+
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.boxes {
+    width: 100%;
+    height: 400px;
+    margin: 2em auto;
+    position: relative;
+    opacity: 0.4;
+}
+
+.boxes div:first-child {
+    background-color: darkred;
+    width: 80%;
+    height: 40%;
+    margin: 200px auto 0;
+    /*    opacity: 0.5;*/
+}
+
+.boxes div:nth-child(2) {
+    background-color: cornsilk;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    /*    opacity: 0.5;*/
+}
+
+.boxes div:last-child {
+    height: 95%;
+    width: 30%;
+    position: absolute;
+    background-color: orangered;
+    left: 490px;
+    top: 0;
+    /*    opacity: 0.5;*/
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------*/
+
+section:nth-child(even) {
+    background: green;
+}
+
+.pinterest {
+    background-color: dimgrey;
+}
+
+.complicated {
+    background-color: white;
+}
+
+article section {
+    height: 150px;
+    background-color: teal;
+    border-left: 1px solid black;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid teal;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    ;
+}
+
+
+/************red transparent****************************/
+
+
+/***************************************************************/
+
+
+/***************************************************************/
+
+
+/***************************************************************/
+
+
+/***************************************************************/
+
+
+/***************************************************************/
+
+footer {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background: darkgrey;
+    overflow: hidden;
+}
+
+.randomtext {
+    float: left;
+    /*border: 1px solid #000;*/
+    padding: 1em;
+    margin: 2em 1em;
+    text-align: justify;
+    ;
+    width: 30%;
+    line-height: 1.5em;
+}
+
+.randomtext h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.randomtext p {
+    font-size: .8em;
+}
+
+.footerimages {
+    /*border: 1px solid orangered;*/
+    padding: 0.5em;
+    margin: 2em 1em;
+    width: 30%;
+    float: left;
+}
+
+.footerimages img {
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin: 1em 1em;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.footerimages img:hover {
+    transform: scale(1.5);
+}
+
+.trickylinks {
+    float: left;
+    /*border: 1px solid red;*/
+    padding: 1em;
+    margin: 0.5em 1em;
+    text-align: center;
+}
+
+trickylinks h3 {
+    margin: 0 auto;
+}
+
+.trickylinks p {
+    border-bottom: 2px solid dimgrey;
+    padding-bottom: 0.3em;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.trickylinks p:hover a {
+    color: white;
+}
