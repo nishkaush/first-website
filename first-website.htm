@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///Users/Nishant/Desktop/first-website/first-website.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Website</title>
+    <style media="screen">
+        body,
+        h1,
+        header,
+        h2,
+        ul,
+        li,
+        a {
+            padding: 0;
+            margin: 0;
+            font-family: Georgia;
+            font-style: none;
+            list-style: none;
+            text-decoration: none;
+            color: #000;
+        }
+        /*@@media only screen and (min-width: 700px) {
+
+    }*/
+
+        body {
+            max-width: 100%;
+            min-width: 500px;
+        }
+        /*-------Top-------------------------------------------------------------*/
+        /*-------Section-------------------------------------------------------------*/
+        /*-------Starts-------------------------------------------------------------*/
+        /*--------Here------------------------------------------------------------*/
+
+        nav {
+            background: white;
+            line-height: 2em;
+            position: relative;
+            display: flex;
+        }
+
+        .logo {
+            float: left;
+            margin: 0 2em;
+        }
+
+        nav ul {
+            padding: 1em;
+            margin-right: 3em;
+            font-size: 1.2em;
+            position: relative;
+            border-top: 3px solid white;
+        }
+        /************************************/
+
+        .home {
+            color: orangered;
+            border-top-color: orangered;
+        }
+
+        .portfolio div {
+            position: absolute;
+            width: 180px;
+            left: 1000em;
+            margin: 0 auto;
+            z-index: 1;
+            background-color: white;
+            color: orangered;
+            border: 1px solid white;
+        }
+
+        .portfolio div li {
+            line-height: 2em;
+            padding: 0.5em 1em;
+            margin: 0.2em auto;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .portfolio div li:last-child {
+            border-bottom: none;
+        }
+
+        .portfolio:hover div {
+            display: block;
+            top: 70px;
+            left: -15px;
+        }
+
+        .portfolio:hover div:hover li a:hover {
+            color: orangered;
+        }
+
+        .portfolio:hover div li ul.firstlevel {
+            position: absolute;
+            display: none;
+        }
+
+        .portfolio:hover div:hover li:nth-child(4):hover ul.firstlevel {
+            background-color: white;
+            display: block;
+            width: 175px;
+            top: 160px;
+            left: 180px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid white;
+        }
+
+        .firstlevel li {
+            margin: 0 1em;
+            padding: 0 0.5em;
+            border: 1px solid white;
+        }
+        /********************************************************/
+
+        .pages div {
+            position: absolute;
+            width: 180px;
+            left: 1000em;
+            margin: 0 auto;
+            z-index: 1;
+            background-color: white;
+            color: orangered;
+            border: 1px solid white;
+        }
+
+        .pages div li {
+            line-height: 2em;
+            padding: 0.5em 1em;
+            margin: 0.2em auto;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .pages div li:last-child {
+            border-bottom: none;
+        }
+
+        .pages:hover {
+            color: orangered;
+            border-top-color: orangered;
+        }
+
+        .pages:hover div {
+            display: block;
+            top: 70px;
+            left: -15px;
+        }
+
+        .pages:hover div:hover li a:hover {
+            color: orangered;
+        }
+
+        .blog:hover,
+        .portfolio:hover,
+        .testimonials:hover,
+        .search:hover {
+            color: orangered;
+            border-top-color: orangered;
+        }
+
+        .search input {
+            position: absolute;
+            left: 7em;
+            top: 1.5em;
+            height: 30%;
+            width: 190%;
+            border-radius: 20px;
+            font-size: 0.7em;
+            border: 2px solid #666666;
+        }
+
+        .show-this {
+            display: none;
+        }
+        /************************************************************/
+        /************************************************************/
+        /************************************************************/
+        /************************************************************/
+        /************************************************************/
+        /************************************************************/
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg);
+            text-align: center;
+            padding: 1em;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 1em 0;
+            color: white;
+            font-weight: 500;
+            font-variant: small-caps;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            color: white;
+            font-weight: 100;
+        }
+
+        .cf::before {
+            content: "";
+            display: table;
+        }
+
+        .cf::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .boxes {
+            width: 100%;
+            height: 400px;
+            margin: 2em auto;
+            position: relative;
+            opacity: 0.4;
+        }
+
+        .boxes div:first-child {
+            background-color: darkred;
+            width: 80%;
+            height: 40%;
+            margin: 200px auto 0;
+            /*    opacity: 0.5;*/
+        }
+
+        .boxes div:nth-child(2) {
+            background-color: cornsilk;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 150px;
+            left: 350px;
+            /*    opacity: 0.5;*/
+        }
+
+        .boxes div:last-child {
+            height: 95%;
+            width: 30%;
+            position: absolute;
+            background-color: orangered;
+            left: 490px;
+            top: 0;
+            /*    opacity: 0.5;*/
+        }
+        /*--------------------------------------------------------------------*/
+        /*--------------------------------------------------------------------*/
+        /*--------------------------------------------------------------------*/
+        /*--------------------------------------------------------------------*/
+
+        .pinterest {
+            background-color: dimgrey;
+        }
+
+        .complicated {
+            background-color: white;
+        }
+
+        article section {
+            height: 150px;
+            background-color: #ff7c4c;
+            border-left: 1px solid black;
+            position: relative;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 30px solid #ff7c4c;
+            position: absolute;
+            left: 50%;
+            top: 150px;
+        }
+        /************red transparent****************************/
+        /***************************************************************/
+        /***************************************************************/
+        /***************************************************************/
+
+        .blog-post-container {
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+            display: flex;
+            text-align: center;
+        }
+
+        .first-post {
+            flex: 1;
+            border-right: 1px solid #000;
+        }
+
+        .first-post h3,
+        .second-post h3,
+        .third-post h3 {
+            margin-top: 2.5em;
+            font-size: 1.5em;
+            letter-spacing: 0.5px;
+        }
+
+        .first-post p,
+        .second-post p,
+        .third-post p {
+            margin: 2em 0.5em;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+        }
+
+        .read-more {
+            width: 150px;
+            margin: 2em 0;
+            padding: 0.6em;
+            background: #323232;
+            font-size: 1.1em;
+            border-radius: 20px;
+            border: 1px solid #323232;
+            box-shadow: 1px 1px 1px 1px black;
+            color: white;
+        }
+
+        .second-post {
+            flex: 1;
+            border-right: 1px solid #000;
+        }
+
+        .third-post {
+            flex: 1;
+        }
+
+        footer {
+            width: 100%;
+            height: 350px;
+            margin: 1em auto;
+            background: white;
+        }
+
+        .randomtext {
+            float: left;
+            padding: 1em;
+            margin: 2em 1em;
+            text-align: justify;
+            ;
+            width: 30%;
+            line-height: 1.5em;
+        }
+
+        .randomtext h2 {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
+        .randomtext p {
+            font-size: .8em;
+        }
+
+        .footerimages {
+            padding: 0.5em;
+            margin: 2em 1em;
+            width: 30%;
+            float: left;
+        }
+
+        .footerimages img {
+            float: left;
+            height: 90px;
+            width: 90px;
+            margin: 1em 1em;
+            transform: scale(1);
+            transition: transform 0.5s;
+        }
+
+        .footerimages img:hover {
+            transform: scale(1.5);
+        }
+
+        .trickylinks {
+            float: left;
+            padding: 1em;
+            margin: 0.5em 1em;
+            text-align: center;
+        }
+
+        .trickylinks h3 {
+            margin: 1em auto;
+        }
+
+        .trickylinks p {
+            border-bottom: 2px solid gray;
+            padding-bottom: 0.3em;
+            text-align: left;
+            font-size: 0.8em;
+        }
+
+        .trickylinks p:hover a {
+            color: #4500ff;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <nav class="cf">
+
+        <img class="logo" src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/my-logo-1.png" alt="Made By Nishant Kaushish" width="90px" height="90px" title="Made By Nishant Kaushish">
+
+        <ul class="home"> Home
+        </ul>
+
+        <ul class="pages">Pages
+            <div>
+                <li><a href="#">Loving This</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Emmet</a></li>
+                <li><a href="#">React Js</a></li>
+                <li><a href="#">Angular JS</a></li>
+            </div>
+        </ul>
+
+        <ul class="blog"> Blog
+        </ul>
+
+        <ul class="portfolio">Portfolio
+            <div>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Beautiful Boxes</a></li>
+                <li><a href="#">Love in the Air</a></li>
+                <li><a href="#">WOW</a>
+                    <ul class="firstlevel">
+                        <li><a href="#">Sketch 3</a></li>
+                        <li><a href="#">Swift</a></li>
+                        <li><a href="#">Node JS</a></li>
+                        <li><a href="#">MongodB</a></li>
+                        <li><a href="#">BootStrap</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">The rest of It</a></li>
+            </div>
+        </ul>
+
+        <ul class="testimonials"> Testimonials
+        </ul>
+
+        <ul class="search">Search
+            <input type="text" class="show-this" autofocus="autofocus" placeholder=" Type and press enter">
+        </ul>
+    </nav>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------- -->
+
+    <header>
+        <h1> #1 Blog Theme of all time</h1>
+        <h2>Made with HTML and CSS</h2>
+        <div class="boxes cf">
+
+            <div> First box</div>
+            <div>Second Box</div>
+            <div></div>
+
+        </div>
+    </header>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------- -->
+
+    <article>
+
+        <section>
+            <div class="triangle"></div>
+        </section>
+
+
+        <div class="blog-post-container">
+            <div class="first-post">
+                <h3>How to Make Friends</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quam deleniti, quas debitis rem dolor natus, in, eius dolorum repellat culpa totam aperiam atque nisi harum odio nesciunt quia reiciendis. Lorem ipsum dolor sit amet, consectetur
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam soluta quia tempore in dicta, aspernatur eligendi.</p>
+                <button type="button" class="read-more">Read More</button>
+            </div>
+            <div class="second-post">
+                <h3>Travelling Europe Cheaply</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quam deleniti, quas debitis rem dolor natus, in, eius dolorum repellat culpa totam aperiam atque nisi harum odio nesciunt quia reiciendis. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Eius, quod a dolorum perferendis quibusdam incidunt ossimus o recusandae ducimus, voluptatem nam perspiciatis.</p>
+                <button type="button" class="read-more">Read More</button>
+            </div>
+            <div class="third-post">
+                <h3>Increasing Productivity</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quam deleniti, quas debitis rem dolor natus, in, eius dolorum repellat culpa totam aperiam atque nisi harum odio nesciunt quia reiciendis. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Tempora placeat veniam ducimus pariatur aperiam officiis quos ut unde voluptates, nesciunt repellendus culpa eum provident.</p>
+                <button type="button" class="read-more">Read More</button>
+            </div>
+
+        </div>
+
+        <section>
+            <div class="triangle"></div>
+        </section>
+
+        <!-- start completely new section here after the second strip -->
+
+        <footer>
+
+            <div class="randomtext">
+                <h2>Design Principles Conclusion</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestias provident cum, commodi eius natus et facere similique reiciendis nesciunt doloremque, aperiam maiores eos sunt ipsa saepe neque omnis in? Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Sint, repudiandae impedit alias asperiores hic est necessitatibus soluta fugit earum, animi expedita, tempore explicabo illo vel, reiciendis neque quae laudantium incidunt!</p>
+            </div>
+
+            <div class="footerimages">
+                <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin1-abtme.png" alt="nishant">
+                <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin2-inspiring.png" alt="inspiring">
+                <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin4-love-css.png" alt="lovecss">
+                <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin6-html.png" alt="html">
+                <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/pin7-emmet.png" alt="js">
+                <img src="http://www.nishant-kaushish.com/wp-content/uploads/2017/03/heart-icon.png" alt="webdesign">
+            </div>
+
+            <div class="trickylinks">
+                <h3>Some Useful Links For Visitors</h3>
+                <p><a href="#">&gt;&nbspBest Trending</a></p>
+                <p><a href="#">&gt;&nbspSpecial Gifts</a></p>
+                <p><a href="#">&gt;&nbspDonate</a></p>
+                <p><a href="#">&gt;&nbspSpread The Word</a></p>
+                <p><a href="#">&gt;&nbspJoin Us</a></p>
+            </div>
+
+        </footer>
+
+    </article>
+
+
+    <script type="text/javascript">
+        var search = document.querySelector(".search");
+        var showThis = document.querySelector(".show-this");
+        var counter = 0;
+        search.addEventListener("click", showSearch);
+
+        function showSearch() {
+            if (counter % 2 !== 0) {
+                showThis.style.display = "none";
+
+            } else {
+                showThis.style.display = "block";
+                showThis.focus();
+            }
+            counter++;
+        }
+    </script>
+</body>
+
+</html>
